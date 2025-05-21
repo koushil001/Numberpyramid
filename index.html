@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Numbers Pyramid Puzzle</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>🎯 Numbers Pyramid Puzzle</h1>
+
+  <div class="controls">
+    <label for="target">Target Number:</label>
+    <input type="number" id="target" placeholder="e.g. 18" />
+    <button onclick="calculate()">Solve</button>
+  </div>
+
+  <div class="pyramid">
+    <!-- Pyramid layout with 10 hexagons labeled A–J -->
+    <div class="row">
+      <div class="hex" id="A">
+        <span>A</span>
+        <input type="text" maxlength="3" placeholder="+5" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="hex" id="B"><span>B</span><input type="text" maxlength="3" placeholder="-3" /></div>
+      <div class="hex" id="C"><span>C</span><input type="text" maxlength="3" placeholder="*2" /></div>
+    </div>
+    <div class="row">
+      <div class="hex" id="D"><span>D</span><input type="text" maxlength="3" placeholder="/4" /></div>
+      <div class="hex" id="E"><span>E</span><input type="text" maxlength="3" placeholder="+6" /></div>
+      <div class="hex" id="F"><span>F</span><input type="text" maxlength="3" placeholder="-7" /></div>
+    </div>
+    <div class="row">
+      <div class="hex" id="G"><span>G</span><input type="text" maxlength="3" placeholder="*1" /></div>
+      <div class="hex" id="H"><span>H</span><input type="text" maxlength="3" placeholder="/2" /></div>
+      <div class="hex" id="I"><span>I</span><input type="text" maxlength="3" placeholder="+3" /></div>
+      <div class="hex" id="J"><span>J</span><input type="text" maxlength="3" placeholder="-1" /></div>
+    </div>
+  </div>
+
+  <div id="results"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
